@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9A0F8760283138C800738789 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F875F283138C800738789 /* main.cpp */; };
+		9A0F8768283138E500738789 /* thread_worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8766283138E500738789 /* thread_worker.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		9A0F875C283138C800738789 /* thread_worker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = thread_worker; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0F875F283138C800738789 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9A0F8766283138E500738789 /* thread_worker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thread_worker.cpp; sourceTree = "<group>"; };
+		9A0F8767283138E500738789 /* thread_worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread_worker.h; sourceTree = "<group>"; };
+		9A0F87692831391A00738789 /* iworker_task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iworker_task.h; sourceTree = "<group>"; };
+		9A0F876A2831398F00738789 /* worker_task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = worker_task.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				9A0F875F283138C800738789 /* main.cpp */,
+				9A0F8766283138E500738789 /* thread_worker.cpp */,
+				9A0F8767283138E500738789 /* thread_worker.h */,
+				9A0F87692831391A00738789 /* iworker_task.h */,
+				9A0F876A2831398F00738789 /* worker_task.h */,
 			);
 			path = thread_worker;
 			sourceTree = "<group>";
@@ -120,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0F8760283138C800738789 /* main.cpp in Sources */,
+				9A0F8768283138E500738789 /* thread_worker.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
