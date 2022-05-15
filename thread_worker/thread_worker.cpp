@@ -2,7 +2,7 @@
 #include "thread_worker.h"
 
 
-void ThreadWorker::threadWorker(){
+void ThreadWorker::run(){
    logMessage("thread start");
    
    while( !quitFlag_ ){
@@ -71,7 +71,7 @@ ThreadWorker::~ThreadWorker(){
 
 
 void ThreadWorker::start(){
-   thread_ = std::thread( &ThreadWorker::threadWorker, this );
+   thread_ = std::thread( &ThreadWorker::run, this );
 }
 
 void ThreadWorker::setTask( std::shared_ptr<IWorkerTask> task ){

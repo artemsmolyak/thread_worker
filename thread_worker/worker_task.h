@@ -2,16 +2,20 @@
 #ifndef Task_hpp
 #define Task_hpp
 
-#include "iworker_task.h"
- 
-#include <unistd.h> // sleep
+#include "iworker_task.h" 
 
 class WorkerTask : public IWorkerTask {
-    
+private:
+    std::function<bool()> task_;
 public:
+    
+    WorkerTask(std::function<bool()> task): task_(task){}
+    
     WorkerTaskResult exec(){
-        sleep(1);
-        return WorkerTaskResult::success;
+        if ( task_() )
+            return WorkerTaskResult::success;
+        else
+            return WorkerTaskResult::failed;
     }
     
     ~WorkerTask() = default;

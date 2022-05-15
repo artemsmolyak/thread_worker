@@ -28,7 +28,7 @@ protected:
   std::condition_variable condition_;
   std::queue< std::shared_ptr<IWorkerTask> > taskQueue_;
 
-  virtual void threadWorker();
+  virtual void run();
   
 public:
   

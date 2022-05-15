@@ -30,6 +30,7 @@
 		9A0F8767283138E500738789 /* thread_worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread_worker.h; sourceTree = "<group>"; };
 		9A0F87692831391A00738789 /* iworker_task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iworker_task.h; sourceTree = "<group>"; };
 		9A0F876A2831398F00738789 /* worker_task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = worker_task.h; sourceTree = "<group>"; };
+		9A0F876B2831403A00738789 /* logger_task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logger_task.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 				9A0F8767283138E500738789 /* thread_worker.h */,
 				9A0F87692831391A00738789 /* iworker_task.h */,
 				9A0F876A2831398F00738789 /* worker_task.h */,
+				9A0F876B2831403A00738789 /* logger_task.h */,
 			);
 			path = thread_worker;
 			sourceTree = "<group>";
